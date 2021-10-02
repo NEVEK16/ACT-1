@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<body style="background-color:#663399;">
+</body>
+
+<h1 style="color:Yellow;">Programming Activity #1</h1>
+<h1><marquee> IT ELECTIVE 4 </marquee></h1>
+
+
+<div ng-app="" ng-init="names=[
+{name:'Lebron James',number:'#6' , position: 'Small Forward.'},
+{name:'Kent Bazemore',number:'#9' , position: 'Small Forward.'},
+{name:'Joel Ayayi',number:'#17' , position: 'Small Forward.'},
+{name:'Chaundee Brown',number:'#38' , position: 'Shooting Guard.'},
+{name:'Dwight Howard',number:'#39' , position: 'Center.'},
+{name:'Lebron James',number:'#6' , position: 'Small Forward.'},
+{name:'Anthony Davis',number:'#23' , position: 'Power Forward.'},
+{name:'Russel Westbrook',number:'#0' , position: 'Point Guard.'},
+{name:'Malik Monk',number:'#11' , position: 'Shooting Guard.'},
+{name:'Wayne Ellington',number:'#2' , position: 'Shooting Guard.'},
+{name:'Kendrick Nunn',number:'#12' , position: 'Shooting Guard.'},
+{name:'Deandre Jordan',number:'#10' , position: 'Center.'},
+{name:'Talen Horton-Tucker',number:'#5' , position: 'Shooting Guard.'},
+{name:'Carmelo Anthony',number:'#7' , position: 'Power Forward.'},
+{name:'Trevor Ariza',number:'#1' , position: 'Small Forward.'}]">
+
+<div ng-app="">
+
+<p>Name: <input type="text" ng-model="name"></p>
+<p>Your Name is: {{ name }}</p>
+
+
+<p>Enter you Address: <input type="text" ng-model="add"></p>
+<p>Your Adress is: {{ add }}</p>
+
+<p>Enter your School : <input type="text" ng-model="shs"></p>
+<p>Your College is: {{ shs }}</p>
+
+<p>Enter your Course: <input type="text" ng-model="course"></p>
+<p>You Course in College is: {{ course }}</p>
+
+<h2> <p style="color:#FFFF00">LOS ANGELES LAKERS </p> <p style="color:#FFFF00"> Head Coach:Frank Vogel</h2>
+<ol>
+  <li ng-repeat="p in names">
+  {{ 'Name: ' + p.name + ', ' + 'Number: ' + p.number + ', ' + 'Position: ' + p.position }}</li>
+</ol>
+
+</div>
+
+</body>
+</html>
